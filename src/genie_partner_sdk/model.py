@@ -9,9 +9,9 @@ class GarageDoorData(TypedDict):
     device_id: str
     door_number: int
     name: str
-    status: str
-    link_status: str
-    battery_level: int
+    status: str | None
+    link_status: str | None
+    battery_level: int | None
 
 
 class GarageDoor:
