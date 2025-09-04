@@ -22,6 +22,6 @@ class GarageDoor:
         self.door_number: int = data["door_number"]
         self.unique_id: str = f"{self.device_id}-{self.door_number}"
         self.name: str = data["name"]
-        self.status: str = data["status"]
-        self.link_status: str = data["link_status"]
-        self.battery_level: int = data["battery_level"]
+        self.status: str | None = data["status"]
+        self.link_status: str | None = data["link_status"]
+        self.battery_level: int | None = data["battery_level"]
